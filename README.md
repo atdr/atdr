@@ -1,6 +1,7 @@
 ## About Me
 
 - ⚗️ studying Chemical Engineering at [@ImperialCollegeLondon](https://github.com/ImperialCollegeLondon)
+  - 🏭 final year design project: [@nitroma](https://github.com/nitroma) ([site](https://nitroma.github.io))
 - 🎓 previously on exchange at EPFL in 2019–20 🇨🇭
 - 💼 find me on [LinkedIn](http://atdr.eu/linkedin)
 - 🎭 makes shiny things with [@dramsoc](https://github.com/dramsoc)
