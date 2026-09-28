@@ -6,3 +6,11 @@
 - 💼 find me on [LinkedIn](https://atdr.eu/linkedin)
 - 🎭 sometimes makes shiny things with [@dramsoc](https://github.com/dramsoc)
 - 📗 find my publications on [Google Scholar](https://atdr.eu/scholar)
+
+<picture>
+  <source
+    srcset="./profile/top-langs-dark.svg"
+    media="(prefers-color-scheme: dark)"
+  />
+  <img src="./profile/top-langs-light.svg" alt="GitHub language stats for @atdr" />
+</picture>
