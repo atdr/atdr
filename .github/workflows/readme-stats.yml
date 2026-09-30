@@ -26,11 +26,12 @@ jobs:
       # To include private repos, add a fine-grained PAT as the STATS_TOKEN secret:
       # resource owner = you, "All repositories", Repository permissions > Metadata: read-only.
       # Nothing else is needed. The card only reads repo names and language sizes.
+      # TeX and BibTeX Style are hidden: the private LaTeX report archives would otherwise dominate.
       - name: Generate top languages card (light)
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=light_github
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide=tex,bibtex%20style&theme=light_github
           path: profile/top-langs-light.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           fail_on_error: true
@@ -39,7 +40,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&theme=dark_github
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&hide=tex,bibtex%20style&theme=dark_github
           path: profile/top-langs-dark.svg
           token: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           fail_on_error: true
