@@ -23,7 +23,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      # To include private repos, add a PAT (scopes: repo, read:user) as the STATS_TOKEN secret
+      # To include private repos, add a fine-grained PAT as the STATS_TOKEN secret:
+      # resource owner = you, "All repositories", Repository permissions > Metadata: read-only.
+      # Nothing else is needed. The card only reads repo names and language sizes.
       - name: Generate top languages card (light)
         uses: stats-organization/github-readme-stats-action@v2
         with:
